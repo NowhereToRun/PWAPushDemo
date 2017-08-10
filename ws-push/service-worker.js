@@ -25,6 +25,7 @@ var filesToCache = [
 ];
 
 function wsInit() {
+  // wss is necessary for https
   var socket = new WebSocket('ws://nowheretorun.ngrok.cc');
   socket.onopen = function (event) {
     socket.onmessage = function (event) {
@@ -55,7 +56,7 @@ self.addEventListener('install', function (e) {
 
 self.addEventListener('activate', function (e) {
   console.log('[ServiceWorker] Activate');
-  wsInit();
+  // wsInit();
   e.waitUntil(
     caches.keys().then(function (keyList) {
       return Promise.all(keyList.map(function (key) {
