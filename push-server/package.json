@@ -1,0 +1,14 @@
+{
+  "name": "push-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "push-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NowhereToRun",
+  "license": "ISC",
+  "dependencies": {
+    "web-push": "^3.2.2"
+  }
+}
