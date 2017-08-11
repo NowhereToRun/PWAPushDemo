@@ -27,7 +27,11 @@ var filesToCache = [
 function wsInit() {
   // wss is necessary for https
   console.log('wsInit');
-  var socket = new WebSocket('wss://47.94.14.224:25550');
+  var socket = new WebSocket('wss://47.94.14.224:25550', {
+    protocolVersion: 8,
+    origin: 'https://47.94.14.224:25550',
+    rejectUnauthorized: false //重要，自签名证书只能这样设了。CA颁发的受信任证书就不需要了
+  });
   socket.onopen = function (event) {
     socket.onmessage = function (event) {
       console.log('Client received a message', event);
@@ -88,8 +92,8 @@ self.addEventListener('fetch', function (e) {
         });
       })
     );
-  }else if(e.request.url.indexOf(fakeUrl) > -1){
-    console.log('fake url');    
+  } else if (e.request.url.indexOf(fakeUrl) > -1) {
+    console.log('fake url');
     wsInit();
     e.respondWith('haha');
   } else {
