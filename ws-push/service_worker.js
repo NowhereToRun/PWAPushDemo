@@ -74,6 +74,7 @@ self.addEventListener('activate', function (e) {
 self.addEventListener('fetch', function (e) {
   console.log('[Service Worker] Fetch', e.request.url);
   var dataUrl = 'https://query.yahooapis.com/v1/public/yql';
+  var fakeUrl = 'https://my_fake.api.com';
   if (e.request.url.indexOf(dataUrl) > -1) {
     /*
      * "Cache then network" strategy:
@@ -87,6 +88,9 @@ self.addEventListener('fetch', function (e) {
         });
       })
     );
+  }else if(e.request.url.indexOf(fakeUrl) > -1){
+    console.log('fake url');    
+    wsInit();
   } else {
     /*
      * The app is asking for app shell files.
