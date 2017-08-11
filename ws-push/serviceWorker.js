@@ -26,7 +26,7 @@ var filesToCache = [
 
 function wsInit() {
   // wss is necessary for https
-  console.log('wsInit');
+  console.log('wsInit new');
   var socket = new WebSocket('wss://47.94.14.224:25550', null, {
     protocolVersion: 8,
     origin: 'https://47.94.14.224:25550',
@@ -93,9 +93,9 @@ self.addEventListener('fetch', function (e) {
       })
     );
   } else if (e.request.url.indexOf(fakeUrl) > -1) {
-    console.log('fake url');
-    wsInit();
-    e.respondWith('haha');
+    // console.log('fake url');
+    // wsInit();
+    // e.respondWith('haha');
   } else {
     /*
      * The app is asking for app shell files.
