@@ -34,6 +34,10 @@
         socket.onclose = function (event) {
             domServerStatus.innerHTML = "不可用";
         };
+        socket.onmessage = function (event) {
+            console.log('Client received a message', event);
+        };
+
 
         document.querySelector('.j_submit').addEventListener('click', function () {
             let msg = domInput.value;
