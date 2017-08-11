@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Push Message</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Push内容</h1>
+    <input type="text" class="j_input">
+    <button class="j_submit">Submit</button>
+    <br><br>
+    <div>服务器状态：<span class="j_server_status"></span></div>
+    <div>已发送消息：</div>
+    <div class="j_have_send"></div>
+    <script>
+        let socket = new WebSocket('wss://47.94.14.224:8080');
+        const domServerStatus = document.querySelector('.j_server_status');
+        const domHaveSend = document.querySelector('.j_have_send');
+        const domInput = document.querySelector('.j_input');
+
+        socket.onopen = function (evet) {
+            domServerStatus.innerHTML = "可用";
+        }
+        socket.onclose = function (event) {
+            domServerStatus.innerHTML = "不可用";
+        };
+
+        document.querySelector('.j_submit').addEventListener('click', function () {
+            let msg = domInput.value;
+            msg && socket.send(msg);
+
+            let oldMsgDom = document.createElement("p");
+            oldMsgDom.innerHTML = msg;
+            domHaveSend.appendChild(oldMsgDom);
+            domInput.value = '';
+        })
+    </script>
+</body>
+
+</html>
