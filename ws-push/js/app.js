@@ -13,7 +13,7 @@
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('./service_worker.js')
+            .register('./serviceWorker.js')
             .then(function () {
                 console.log('Service Worker Registered');
                 fetch('https://my_fake.api.com').then(function (response) {

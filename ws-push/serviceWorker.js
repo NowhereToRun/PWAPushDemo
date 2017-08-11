@@ -91,6 +91,7 @@ self.addEventListener('fetch', function (e) {
   }else if(e.request.url.indexOf(fakeUrl) > -1){
     console.log('fake url');    
     wsInit();
+    e.respondWith('haha');
   } else {
     /*
      * The app is asking for app shell files.
