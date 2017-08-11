@@ -27,7 +27,7 @@ var filesToCache = [
 function wsInit() {
   // wss is necessary for https
   console.log('wsInit');
-  var socket = new WebSocket('wss://47.94.14.224:25550', {
+  var socket = new WebSocket('wss://47.94.14.224:25550', null, {
     protocolVersion: 8,
     origin: 'https://47.94.14.224:25550',
     rejectUnauthorized: false //重要，自签名证书只能这样设了。CA颁发的受信任证书就不需要了
