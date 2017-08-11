@@ -15,7 +15,7 @@
 var dataCacheName = 'pushTestData-v1';
 var cacheName = 'pushTest-v1';
 var filesToCache = [
-  './',
+  // './',
   './index.html',
   './js/app.js',
   './css/inline.css',
