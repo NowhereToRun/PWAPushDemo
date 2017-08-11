@@ -26,7 +26,7 @@ var filesToCache = [
 
 function wsInit() {
   // wss is necessary for https
-  var socket = new WebSocket('ws://nowheretorun.ngrok.cc');
+  var socket = new WebSocket('wss://47.94.14.224:8080');
   socket.onopen = function (event) {
     socket.onmessage = function (event) {
       console.log('Client received a message', event);
