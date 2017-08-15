@@ -95,12 +95,14 @@ self.addEventListener('fetch', function (e) {
   } else if (e.request.url.indexOf(fakeUrl) > -1) {
     console.log('fake url');
     // wsInit();
-    var nextPage = new Request('pushMsg.html');
+    var nextPage = new Request('pushMsg');
     e.waitUntil(
       fetch(nextPage).then(function (response) {
         return caches.open(dataCacheName).then(function (cache) {
-          console.log('Cached next page' + response.url);
-          return cache.put(nextPage, response);
+          console.log('Cached next page ' + response.url);
+          return cache.put(nextPage, response).then(function(){
+            return new Response('HaHaHa');
+          })
         });
       }));
     // e.respondWith(
