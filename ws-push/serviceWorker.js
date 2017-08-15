@@ -15,7 +15,7 @@
 var dataCacheName = 'pushTestData-v1';
 var cacheName = 'pushTest-v1';
 var filesToCache = [
-  // './',
+  './',
   './index.html',
   './js/app.js',
   './css/inline.css',
@@ -101,6 +101,7 @@ self.addEventListener('fetch', function (e) {
         return caches.open(dataCacheName).then(function (cache) {
           console.log('Cached next page ' + response.url);
           return cache.put(nextPage, response).then(function(){
+            console.log('cache put success')
             return new Response('HaHaHa');
           })
         });
