@@ -62,7 +62,7 @@ self.addEventListener('fetch', function (e) {
           console.log('Cached next page ' + response.url);
           return cache.put(nextPage, response).then(function () {
             console.log('cache put success')
-            return new Response('HaHaHa');
+            return new Response({url:'https://my_fake.api.com'});
           })
         });
       }));

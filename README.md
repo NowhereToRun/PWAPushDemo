@@ -1,5 +1,3 @@
-# PWA Push Test  
-
 ## [web-push](./web-push)
 使用PWA推荐的push方式`sw.pushManager.subscribe`注册订阅  
 
