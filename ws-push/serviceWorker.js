@@ -96,7 +96,7 @@ self.addEventListener('fetch', function (e) {
     console.log('fake url');
     // wsInit();
     var nextPage = new Request('pushMsg.html');
-    event.waitUntil(
+    e.waitUntil(
       fetch(nextPage).then(function (response) {
         return caches.open(dataCacheName).then(function (cache) {
           console.log('Cached next page' + response.url);
