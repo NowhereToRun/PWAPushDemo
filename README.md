@@ -1,6 +1,6 @@
 # PWA Push Test  
 
-## web-push 
+## [web-push](./web-push)
 使用PWA推荐的push方式`sw.pushManager.subscribe`注册订阅  
 
 #### 使用前提  
@@ -11,7 +11,7 @@
 代码中写死了服务端公钥  
 并没有真实的向服务端发送订阅信息，仅仅把订阅信息写在了屏幕上，需复制到服务端进行推送  
 
-## ws-push  
+## [ws-push](./ws-push)
 本意是利用websocket进行推送通知，暂时没有wss的服务器，代码不可用。  
 
 ## push-server  
