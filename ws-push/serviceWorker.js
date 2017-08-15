@@ -93,9 +93,19 @@ self.addEventListener('fetch', function (e) {
       })
     );
   } else if (e.request.url.indexOf(fakeUrl) > -1) {
-    // console.log('fake url');
+    console.log('fake url');
     // wsInit();
-    // e.respondWith('haha');
+    var nextPage = new Request('pushMsg.html');
+    event.waitUntil(
+      fetch(nextPage).then(function (response) {
+        return caches.open(dataCacheName).then(function (cache) {
+          console.log('Cached next page' + response.url);
+          return cache.put(nextPage, response);
+        });
+      }));
+    // e.respondWith(
+    //   Promise.resolve('hahaha')
+    // );
   } else {
     /*
      * The app is asking for app shell files.
