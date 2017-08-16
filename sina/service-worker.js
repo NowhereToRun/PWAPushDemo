@@ -18,10 +18,11 @@ var filesToCache = [
   './',
   './index.html',
   './js/app.js',
-  './css/inline.css',
+  './css/homev8.min.css',
   './images/try_57x57_v1.png',
   './images/try_114x114_v1.png',
-  './images/try_144x144_v1.png'
+  './images/try_144x144_v1.png',
+  './images/bg.jpg'
 ];
 
 self.addEventListener('install', function (e) {
@@ -60,7 +61,7 @@ self.addEventListener('fetch', function (e) {
         return caches.open(dataCacheName).then(function (cache) {
           console.log('Cached next page ' + response.url);
           return cache.put(nextPage, response).then(function () {
-            console.log('cache put success')
+            console.log('cache put success');
             return new Response({url:'https://my_fake.api.com'});
           })
         });
