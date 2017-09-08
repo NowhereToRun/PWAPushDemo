@@ -14,6 +14,7 @@
         navigator.serviceWorker
             .register('./service_worker.js')
             .then(function () {
+                alert('Service Worker Registered');
                 console.log('Service Worker Registered');
             });
         // showNotification();
