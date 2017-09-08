@@ -41,8 +41,8 @@
         deferredPrompt = e;
 
         // 取消默认事件
-        e.preventDefault();
-        return false;
+        // e.preventDefault();
+        // return false;
     });
 
     var button = document.querySelector('.j_show_prompt');
