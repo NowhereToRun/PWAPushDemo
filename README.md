@@ -21,3 +21,6 @@
 
 ## [sina](./sina)
 测试，点击提前加载资源。  
+
+## [empty](./empty)
+测试，空service-worker，测试添加主屏图标 
