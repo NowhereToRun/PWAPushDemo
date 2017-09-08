@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>巴基斯坦为来自中国礼物着迷_手机新浪网</title>
+    <script type="text/javascript">
+        window.STO = window.STO || {}; window.STO.fs = new Date().getTime();
+    </script>
+    <meta name="keywords" content="巴基斯坦,卡拉奇,全球贸易,sina.cn">
+    <meta name="description" content="原标题：观察|法报：巴基斯坦为来自中国的意外礼物而着迷法国《世界报》8月9日刊发题为《巴基斯坦为来自中国的意外礼物而着迷...">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="sina_mobile">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="always">
+    <meta name="sudameta" content="allCIDs:68256,257,51895,200856,51923,56262,258,38790">
+
+    <!-- seo -->
+    <meta property="og:type" content="news" />
+    <meta property="og:title" content="巴基斯坦为来自中国礼物着迷" />
+    <meta property="og:description" content="巴基斯坦为来自中国礼物着迷" />
+    <meta property="og:url" content="http://news.sina.cn/2017-08-15/detail-ifyixipt1832343.d.html" />
+    <meta property="article:author" content="参考消息" />
+    <meta property="article:published_time" content="2017-08-15 12:25:21" />
+    <meta name="publishid" content="fyixipt1832343" />
+
+    <!-- 搜索引擎 辅助抓站 -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="baidu-site-verification" content="rTnMzcp5WP" />
+    <meta name="shenma-site-verification" content="0c910b838092fac1fb183f3de2eeb30a" />
+
+    <!-- 添加主屏幕-->
+    <meta name="apple-mobile-web-app-title" content="新浪移动_手机新浪网">
+    <link rel="apple-touch-icon-precomposed" href="//mjs.sinaimg.cn/wap/online/public/images/addToHome/sina_114x114_v1.png">
+    <link rel="apple-touch-icon-precomposed" href="//mjs.sinaimg.cn/wap/online/public/images/addToHome/sina_57X57_v1.png">
+    <script>
+        var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }; try { !function (e, t) { "object" == ("undefined" == typeof exports ? "undefined" : _typeof(exports)) && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t(e.RSVP = e.RSVP || {}) }(this, function (e) { "use strict"; function t(e, t) { for (var n = 0, r = e.length; r > n; n++)if (e[n] === t) return n; return -1 } function n(e) { var t = e._promiseCallbacks; return t || (t = e._promiseCallbacks = {}), t } function r(e, t) { return 2 !== arguments.length ? je[e] : void (je[e] = t) } function o(e) { var t = "undefined" == typeof e ? "undefined" : _typeof(e); return null !== e && ("object" === t || "function" === t) } function i(e) { return "function" == typeof e } function u(e) { return null !== e && "object" == ("undefined" == typeof e ? "undefined" : _typeof(e)) } function a(e) { return null !== e && "object" == ("undefined" == typeof e ? "undefined" : _typeof(e)) } function s() { setTimeout(function () { for (var e = 0; e < Te.length; e++) { var t = Te[e], n = t.payload; n.guid = n.key + n.id, n.childGuid = n.key + n.childId, n.error && (n.stack = n.error.stack), je.trigger(t.name, t.payload) } Te.length = 0 }, 50) } function c(e, t, n) { 1 === Te.push({ name: e, payload: { key: t._guidKey, id: t._id, eventName: e, detail: t._result, childId: n && n._id, label: t._label, timeStamp: Oe(), error: je["instrument-with-stack"] ? new Error(t._label) : null } }) && s() } function f(e, t) { var n = this; if (e && "object" == ("undefined" == typeof e ? "undefined" : _typeof(e)) && e.constructor === n) return e; var r = new n(p, t); return _(r, e), r } function l() { return new TypeError("A promises callback cannot return that same promise.") } function p() { } function d(e) { try { return e.then } catch (t) { return Re.error = t, Re } } function h(e, t, n, r) { try { e.call(t, n, r) } catch (o) { return o } } function y(e, t, n) { je.async(function (e) { var r = !1, o = h(n, t, function (n) { r || (r = !0, t !== n ? _(e, n, void 0) : w(e, n)) }, function (t) { r || (r = !0, b(e, t)) }, "Settle: " + (e._label || " unknown promise")); !r && o && (r = !0, b(e, o)) }, e) } function v(e, t) { t._state === Pe ? w(e, t._result) : t._state === Ae ? (t._onError = null, b(e, t._result)) : j(t, void 0, function (n) { t !== n ? _(e, n, void 0) : w(e, n) }, function (t) { return b(e, t) }) } function m(e, t, n) { var r = t.constructor === e.constructor && n === P && e.constructor.resolve === f; r ? v(e, t) : n === Re ? (b(e, Re.error), Re.error = null) : i(n) ? y(e, t, n) : w(e, t) } function _(e, t) { e === t ? w(e, t) : o(t) ? m(e, t, d(t)) : w(e, t) } function g(e) { e._onError && e._onError(e._result), S(e) } function w(e, t) { e._state === xe && (e._result = t, e._state = Pe, 0 === e._subscribers.length ? je.instrument && c("fulfilled", e) : je.async(S, e)) } function b(e, t) { e._state === xe && (e._state = Ae, e._result = t, je.async(g, e)) } function j(e, t, n, r) { var o = e._subscribers, i = o.length; e._onError = null, o[i] = t, o[i + Pe] = n, o[i + Ae] = r, 0 === i && e._state && je.async(S, e) } function S(e) { var t = e._subscribers, n = e._state; if (je.instrument && c(n === Pe ? "fulfilled" : "rejected", e), 0 !== t.length) { for (var r = void 0, o = void 0, i = e._result, u = 0; u < t.length; u += 3)r = t[u], o = t[u + n], r ? T(n, r, o, i) : o(i); e._subscribers.length = 0 } } function E() { this.error = null } function O(e, t) { try { return e(t) } catch (n) { return ke.error = n, ke } } function T(e, t, n, r) { var o = i(n), u = void 0, a = void 0; if (o) { if (u = O(n, r), u === ke) a = u.error, u.error = null; else if (u === t) return void b(t, l()) } else u = r; t._state !== xe || (o && void 0 === a ? _(t, u) : void 0 !== a ? b(t, a) : e === Pe ? w(t, u) : e === Ae && b(t, u)) } function x(e, t) { var n = !1; try { t(function (t) { n || (n = !0, _(e, t)) }, function (t) { n || (n = !0, b(e, t)) }) } catch (r) { b(e, r) } } function P(e, t, n) { var r = this, o = r._state; if (o === Pe && !e || o === Ae && !t) return je.instrument && c("chained", r, r), r; r._onError = null; var i = new r.constructor(p, n), u = r._result; if (je.instrument && c("chained", r, i), o === xe) j(r, i, e, t); else { var a = o === Pe ? e : t; je.async(function () { return T(o, i, a, u) }) } return i } function A(e, t, n) { return e === Pe ? { state: "fulfilled", value: n } : { state: "rejected", reason: n } } function R(e, t) { return Ee(e) ? new Ce(this, e, !0, t).promise : this.reject(new TypeError("Promise.all must be called with an array"), t) } function k(e, t) { var n = this, r = new n(p, t); if (!Ee(e)) return b(r, new TypeError("Promise.race must be called with an array")), r; for (var o = 0; r._state === xe && o < e.length; o++)j(n.resolve(e[o]), void 0, function (e) { return _(r, e) }, function (e) { return b(r, e) }); return r } function C(e, t) { var n = this, r = new n(p, t); return b(r, e), r } function I() { throw new TypeError("You must pass a resolver function as the first argument to the promise constructor") } function M() { throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.") } function V() { this.value = void 0 } function N(e) { try { return e.then } catch (t) { return Ne.value = t, Ne } } function q(e, t, n) { try { e.apply(t, n) } catch (r) { return Ne.value = r, Ne } } function D(e, t) { for (var n = {}, r = e.length, o = new Array(r), i = 0; r > i; i++)o[i] = e[i]; for (var u = 0; u < t.length; u++) { var a = t[u]; n[a] = o[u + 1] } return n } function H(e) { for (var t = e.length, n = new Array(t - 1), r = 1; t > r; r++)n[r - 1] = e[r]; return n } function U(e, t) { return { then: function (n, r) { return e.call(t, n, r) } } } function J(e, t) { var n = function r() { for (var r = this, n = arguments.length, o = new Array(n + 1), i = !1, u = 0; n > u; ++u) { var a = arguments[u]; if (!i) { if (i = G(a), i === qe) { var s = new Ve(p); return b(s, qe.value), s } i && i !== !0 && (a = U(i, a)) } o[u] = a } var c = new Ve(p); return o[n] = function (e, n) { e ? b(c, e) : void 0 === t ? _(c, n) : t === !0 ? _(c, H(arguments)) : Ee(t) ? _(c, D(arguments, t)) : _(c, n) }, i ? L(c, o, e, r) : K(c, o, e, r) }; return n.__proto__ = e, n } function K(e, t, n, r) { var o = q(n, r, t); return o === Ne && b(e, o.value), e } function L(e, t, n, r) { return Ve.all(t).then(function (t) { var o = q(n, r, t); return o === Ne && b(e, o.value), e }) } function G(e) { return !(!e || "object" != ("undefined" == typeof e ? "undefined" : _typeof(e))) && (e.constructor === Ve || N(e)) } function B(e, t) { return Ve.all(e, t) } function F(e, t) { if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return !t || "object" != ("undefined" == typeof t ? "undefined" : _typeof(t)) && "function" != typeof t ? e : t } function Q(e, t) { if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + ("undefined" == typeof t ? "undefined" : _typeof(t))); e.prototype = Object.create(t && t.prototype, { constructor: { value: e, enumerable: !1, writable: !0, configurable: !0 } }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t) } function W(e, t) { return Ee(e) ? new De(Ve, e, t).promise : Ve.reject(new TypeError("Promise.allSettled must be called with an array"), t) } function X(e, t) { return Ve.race(e, t) } function Y(e, t) { if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return !t || "object" != ("undefined" == typeof t ? "undefined" : _typeof(t)) && "function" != typeof t ? e : t } function $(e, t) { if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + ("undefined" == typeof t ? "undefined" : _typeof(t))); e.prototype = Object.create(t && t.prototype, { constructor: { value: e, enumerable: !1, writable: !0, configurable: !0 } }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t) } function z(e, t) { return u(e) ? new Ue(Ve, e, t).promise : Ve.reject(new TypeError("Promise.hash must be called with an object"), t) } function Z(e, t) { if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return !t || "object" != ("undefined" == typeof t ? "undefined" : _typeof(t)) && "function" != typeof t ? e : t } function ee(e, t) { if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + ("undefined" == typeof t ? "undefined" : _typeof(t))); e.prototype = Object.create(t && t.prototype, { constructor: { value: e, enumerable: !1, writable: !0, configurable: !0 } }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t) } function te(e, t) { return u(e) ? new Je(Ve, e, !1, t).promise : Ve.reject(new TypeError("RSVP.hashSettled must be called with an object"), t) } function ne(e) { throw setTimeout(function () { throw e }), e } function re(e) { var t = { resolve: void 0, reject: void 0 }; return t.promise = new Ve(function (e, n) { t.resolve = e, t.reject = n }, e), t } function oe(e, t, n) { return Ee(e) ? i(t) ? Ve.all(e, n).then(function (e) { for (var r = e.length, o = new Array(r), i = 0; r > i; i++)o[i] = t(e[i]); return Ve.all(o, n) }) : Ve.reject(new TypeError("RSVP.map expects a function as a second argument"), n) : Ve.reject(new TypeError("RSVP.map must be called with an array"), n) } function ie(e, t) { return Ve.resolve(e, t) } function ue(e, t) { return Ve.reject(e, t) } function ae(e, t) { return Ve.all(e, t) } function se(e, t) { return Ve.resolve(e, t).then(function (e) { return ae(e, t) }) } function ce(e, t, n) { if (!(Ee(e) || u(e) && void 0 !== e.then)) return Ve.reject(new TypeError("RSVP.filter must be called with an array or promise"), n); if (!i(t)) return Ve.reject(new TypeError("RSVP.filter expects function as a second argument"), n); var r = Ee(e) ? ae(e, n) : se(e, n); return r.then(function (e) { for (var r = e.length, o = new Array(r), i = 0; r > i; i++)o[i] = t(e[i]); return ae(o, n).then(function (t) { for (var n = new Array(r), o = 0, i = 0; r > i; i++)t[i] && (n[o] = e[i], o++); return n.length = o, n }) }) } function fe(e, t) { Xe[Ke] = e, Xe[Ke + 1] = t, Ke += 2, 2 === Ke && Ye() } function le() { var e = process.nextTick, t = process.versions.node.match(/^(?:(\d+)\.)?(?:(\d+)\.)?(\*|\d+)$/); return Array.isArray(t) && "0" === t[1] && "10" === t[2] && (e = setImmediate), function () { return e(ve) } } function pe() { return "undefined" != typeof Le ? function () { Le(ve) } : ye() } function de() { var e = 0, t = new Fe(ve), n = document.createTextNode(""); return t.observe(n, { characterData: !0 }), function () { return n.data = e = ++e % 2 } } function he() { var e = new MessageChannel; return e.port1.onmessage = ve, function () { return e.port2.postMessage(0) } } function ye() { return function () { return setTimeout(ve, 1) } } function ve() { for (var e = 0; Ke > e; e += 2) { var t = Xe[e], n = Xe[e + 1]; t(n), Xe[e] = void 0, Xe[e + 1] = void 0 } Ke = 0 } function me() { try { var e = require, t = e("vertx"); return Le = t.runOnLoop || t.runOnContext, pe() } catch (n) { return ye() } } function _e(e, t, n) { return t in e ? Object.defineProperty(e, t, { value: n, enumerable: !0, configurable: !0, writable: !0 }) : e[t] = n, e } function ge() { je.on.apply(je, arguments) } function we() { je.off.apply(je, arguments) } var be = { mixin: function (e) { return e.on = this.on, e.off = this.off, e.trigger = this.trigger, e._promiseCallbacks = void 0, e }, on: function (e, r) { if ("function" != typeof r) throw new TypeError("Callback must be a function"); var o = n(this), i = void 0; i = o[e], i || (i = o[e] = []), -1 === t(i, r) && i.push(r) }, off: function (e, r) { var o = n(this), i = void 0, u = void 0; r ? (i = o[e], u = t(i, r), -1 !== u && i.splice(u, 1)) : o[e] = [] }, trigger: function (e, t, r) { var o = n(this), i = void 0, u = void 0; if (i = o[e]) for (var a = 0; a < i.length; a++)(u = i[a])(t, r) } }, je = { instrument: !1 }; be.mixin(je); var Se = void 0; Se = Array.isArray ? Array.isArray : function (e) { return "[object Array]" === Object.prototype.toString.call(e) }; var Ee = Se, Oe = Date.now || function () { return (new Date).getTime() }, Te = [], xe = void 0, Pe = 1, Ae = 2, Re = new E, ke = new E, Ce = function () { function e(e, t, n, r) { this._instanceConstructor = e, this.promise = new e(p, r), this._abortOnReject = n, this._init.apply(this, arguments) } return e.prototype._init = function (e, t) { var n = t.length || 0; this.length = n, this._remaining = n, this._result = new Array(n), this._enumerate(t), 0 === this._remaining && w(this.promise, this._result) }, e.prototype._enumerate = function (e) { for (var t = this.length, n = this.promise, r = 0; n._state === xe && t > r; r++)this._eachEntry(e[r], r) }, e.prototype._settleMaybeThenable = function (e, t) { var n = this._instanceConstructor, r = n.resolve; if (r === f) { var o = d(e); if (o === P && e._state !== xe) e._onError = null, this._settledAt(e._state, t, e._result); else if ("function" != typeof o) this._remaining-- , this._result[t] = this._makeResult(Pe, t, e); else if (n === Ve) { var i = new n(p); m(i, e, o), this._willSettleAt(i, t) } else this._willSettleAt(new n(function (t) { return t(e) }), t) } else this._willSettleAt(r(e), t) }, e.prototype._eachEntry = function (e, t) { a(e) ? this._settleMaybeThenable(e, t) : (this._remaining-- , this._result[t] = this._makeResult(Pe, t, e)) }, e.prototype._settledAt = function (e, t, n) { var r = this.promise; r._state === xe && (this._abortOnReject && e === Ae ? b(r, n) : (this._remaining-- , this._result[t] = this._makeResult(e, t, n), 0 === this._remaining && w(r, this._result))) }, e.prototype._makeResult = function (e, t, n) { return n }, e.prototype._willSettleAt = function (e, t) { var n = this; j(e, void 0, function (e) { return n._settledAt(Pe, t, e) }, function (e) { return n._settledAt(Ae, t, e) }) }, e }(), Ie = "rsvp_" + Oe() + "-", Me = 0, Ve = function () { function e(t, n) { this._id = Me++ , this._label = n, this._state = void 0, this._result = void 0, this._subscribers = [], je.instrument && c("created", this), p !== t && ("function" != typeof t && I(), this instanceof e ? x(this, t) : M()) } return e.prototype._onError = function (e) { var t = this; je.after(function () { t._onError && je.trigger("error", e, t._label) }) }, e.prototype["catch"] = function (e, t) { return this.then(void 0, e, t) }, e.prototype["finally"] = function (e, t) { var n = this, r = n.constructor; return n.then(function (t) { return r.resolve(e()).then(function () { return t }) }, function (t) { return r.resolve(e()).then(function () { throw t }) }, t) }, e }(); Ve.cast = f, Ve.all = R, Ve.race = k, Ve.resolve = f, Ve.reject = C, Ve.prototype._guidKey = Ie, Ve.prototype.then = P; var Ne = new V, qe = new V, De = function (e) { function t(t, n, r) { return F(this, e.call(this, t, n, !1, r)) } return Q(t, e), t }(Ce); De.prototype._makeResult = A; var He = Object.prototype.hasOwnProperty, Ue = function (e) { function t(t, n) { var r = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2], o = arguments[3]; return Y(this, e.call(this, t, n, r, o)) } return $(t, e), t.prototype._init = function (e, t) { this._result = {}, this._enumerate(t), 0 === this._remaining && w(this.promise, this._result) }, t.prototype._enumerate = function (e) { var t = this.promise, n = []; for (var r in e) He.call(e, r) && n.push({ position: r, entry: e[r] }); var o = n.length; this._remaining = o; for (var i = void 0, u = 0; t._state === xe && o > u; u++)i = n[u], this._eachEntry(i.entry, i.position) }, t }(Ce), Je = function (e) { function t(t, n, r) { return Z(this, e.call(this, t, n, !1, r)) } return ee(t, e), t }(Ue); Je.prototype._makeResult = A; var Ke = 0, Le = void 0, Ge = "undefined" != typeof window ? window : void 0, Be = Ge || {}, Fe = Be.MutationObserver || Be.WebKitMutationObserver, Qe = "undefined" == typeof self && "undefined" != typeof process && "[object process]" === {}.toString.call(process), We = "undefined" != typeof Uint8ClampedArray && "undefined" != typeof importScripts && "undefined" != typeof MessageChannel, Xe = new Array(1e3), Ye = void 0; Ye = Qe ? le() : Fe ? de() : We ? he() : void 0 === Ge && "function" == typeof require ? me() : ye(); var $e = void 0; if ("object" == ("undefined" == typeof self ? "undefined" : _typeof(self))) $e = self; else { if ("object" != ("undefined" == typeof global ? "undefined" : _typeof(global))) throw new Error("no global: `self` or `global` found"); $e = global } var ze; je.async = fe, je.after = function (e) { return setTimeout(e, 0) }; var Ze = ie, et = function (e, t) { return je.async(e, t) }; if ("undefined" != typeof window && "object" == _typeof(window.__PROMISE_INSTRUMENTATION__)) { var tt = window.__PROMISE_INSTRUMENTATION__; r("instrument", !0); for (var nt in tt) tt.hasOwnProperty(nt) && ge(nt, tt[nt]) } var rt = (ze = { asap: fe, cast: Ze, Promise: Ve, EventTarget: be, all: B, allSettled: W, race: X, hash: z, hashSettled: te, rethrow: ne, defer: re, denodeify: J, configure: r, on: ge, off: we, resolve: ie, reject: ue, map: oe }, _e(ze, "async", et), _e(ze, "filter", ce), ze); e["default"] = rt, e.asap = fe, e.cast = Ze, e.Promise = Ve, e.EventTarget = be, e.all = B, e.allSettled = W, e.race = X, e.hash = z, e.hashSettled = te, e.rethrow = ne, e.defer = re, e.denodeify = J, e.configure = r, e.on = ge, e.off = we, e.resolve = ie, e.reject = ue, e.map = oe, e.async = et, e.filter = ce, Object.defineProperty(e, "__esModule", { value: !0 }) }) } catch (e) { console.error(e, "rsvp-latest.min.js") } try { !function (e, t) { "use strict"; var n = t.head || t.getElementsByTagName("head")[0], r = "storage-", o = 5e3, i = [], u = function b(e, t) { try { return localStorage.setItem(r + e, JSON.stringify(t)), !0 } catch (n) { if (n.name.toUpperCase().indexOf("QUOTA") >= 0) { var o, i = []; for (o in localStorage) 0 === o.indexOf(r) && i.push(JSON.parse(localStorage[o])); return i.length ? (i.sort(function (e, t) { return e.stamp - t.stamp }), storage.remove(i[0].key), b(e, t)) : void 0 } return } }, a = function (t) { return "https:" == e.location.protocol && -1 != t.indexOf("http://") && (t = t.replace("http", "https")), t }, s = function (e, t) { var n = new RSVP.Promise(function (n, r) { var o = new XMLHttpRequest; e = a(e), o.open("GET", e, "css" != t ? !0 : !1), o.onreadystatechange = function () { 4 === o.readyState && (200 === o.status || 0 === o.status && o.responseText ? n({ content: o.responseText, type: o.getResponseHeader("content-type") }) : r(new Error(o.statusText))) }, setTimeout(function () { o.readyState < 4 && o.abort() }, storage.timeout), o.send() }); return n }, c = function (e) { return s(e.url, e.type).then(function (t) { var n = f(e, t); return e.skipCache || u(e.key, n), n }) }, f = function (e, t) { var n = +new Date; return e.data = t.content, e.originalType = t.type, e.type = e.type || t.type, e.skipCache = e.skipCache || !1, e.stamp = n, e.expire = n + 60 * (e.expire || o) * 60 * 1e3, e }, l = function (e, t) { return !e || e.expire - +new Date < 0 || t.unique !== e.unique || storage.isValidItem && !storage.isValidItem(e, t) }, p = function (e) { var t, n, r; if (e.url) return e.key = e.key || e.url, t = storage.get(e.key), e.execute = e.execute !== !1, r = l(t, e), e.live || r ? (e.unique && (e.url += (e.url.indexOf("?") > 0 ? "&" : "?") + "storage-unique=" + e.unique), n = c(e), e.live && !r && (n = n.then(function (e) { return e }, function () { return t }))) : (t.type = e.type || t.originalType, t.execute = e.execute, n = new RSVP.Promise(function (e) { e(t) })), n }, d = function (e) { var r = t.createElement("script"); r.defer = !0, r.text = e.data, n.appendChild(r) }, h = function (e, t) { return e.replace(/url\([\s\S]*?\)/gim, function (e) { if (-1 != e.indexOf("data:image") || -1 != e.indexOf("//")) return e; var n = e.match(/url\([\'\"]{0,2}([\s\S]+?)[\'\"]{0,2}\)/); if (!n || !n[1]) return e; var r = t.split("/"); return r.pop(), "url(" + r.join("/") + "/" + n[1] + ")" }) }, y = function (e) { var r = t.createElement("style"), o = h(e.data, e.url); r.innerHTML = o, n.appendChild(r) }, v = { "default": d, css: y }, m = function (e) { return e.type && v[e.type] ? v[e.type](e) : v["default"](e) }, _ = function (e) { return e.map(function (e) { return e.execute && m(e), e }) }, g = function () { var e, t, n = []; for (e = 0, t = arguments.length; t > e; e++)n.push(p(arguments[e])); return RSVP.all(n) }, w = function j() { var e = g.apply(null, arguments), t = this.then(function () { return e }).then(_); return t.thenRequire = j, t }; e.storage = { require: function () { if (e.localStorage) { for (var n = 0, r = arguments.length; r > n; n++)arguments[n].execute = arguments[n].execute !== !1, arguments[n].once && i.indexOf(arguments[n].url) >= 0 ? arguments[n].execute = !1 : arguments[n].execute !== !1 && i.indexOf(arguments[n].url) < 0 && i.push(arguments[n].url); var o = g.apply(null, arguments).then(_); return o.thenRequire = w, o } for (var n = 0, r = arguments.length; r > n; n++)"css" == arguments[n].type ? t.write('<link rel="stylesheet" type="text/css" href="' + arguments[n].url + '">') : t.write('<script type="text/javascript" src="' + arguments[n].url + '"><\/script>') }, remove: function (e) { return localStorage.removeItem(r + e), this }, get: function (e) { var t = localStorage.getItem(r + e); try { return JSON.parse(t || "false") } catch (n) { return !1 } }, clear: function (e) { var t, n, o = +new Date; for (t in localStorage) n = t.split(r)[1], n && (!e || this.get(n).expire <= o) && this.remove(n); return this }, isValidItem: null, timeout: 5e3, addHandler: function (e, t) { Array.isArray(e) || (e = [e]), e.forEach(function (e) { v[e] = t }) }, removeHandler: function (e) { storage.addHandler(e, void 0) } }, storage.clear(!0) }(this, document) } catch (e) { console.error(e, "storage.js") }
+    </script>
+
+    <script type="text/javascript">
+        var sudaLogConfig = {
+            uId: '',
+            url: 'http://news.sina.com.cn/o/2017-08-15/doc-ifyixipt1832343.shtml',
+            prevPageClickTime: '',
+            ext1: 'cid68256,cid257,cid51895,cid200856,cid51923,cid56262,cid258,cid38790',
+        };
+    </script>
+
+    <script>
+        function rem() { var t = 100, o = 750, e = document.documentElement.clientWidth || window.innerWidth, n = Math.max(Math.min(e, 480), 320), h = 50; 320 >= n && (h = Math.floor(n / o * t * .99)), n > 320 && 362 >= n && (h = Math.floor(n / o * t * 1)), n > 362 && 375 >= n && (h = Math.floor(n / o * t * 1)), n > 375 && (h = Math.floor(n / o * t * .97)), document.querySelector("html").style.fontSize = h + "px" };
+        rem();
+        window.onresize = function () { rem(); }
+    </script>
+
+    <!-- css_s -->
+    <script type="text/javascript">
+        window.STO = window.STO || {}; window.STO.frS = new Date().getTime();
+    </script>
+    <link rel="stylesheet" type="text/css" href="//mjs.sinaimg.cn/wap/project/articlev4/0.10.16/index/index.min.css">
+    <!--
+	<script>storage.require({url: '//mjs.sinaimg.cn/wap/project/articlev4/0.10.16/index/index.min.css', key : 'index.min.css', unique : '0.10.16', type:'css'});</script>
+	-->
+    <!-- css_e -->
+
+    <!-- 正文统一文档信息配置 -->
+    <script type="text/javascript">
+        var __docConfig = {
+            __domain: 'news',//文档所在域名
+            __docId: 'fyixipt1832343',//文档ID
+            __docUrl: 'http://news.sina.cn/2017-08-15/detail-ifyixipt1832343.d.html',//当前页面URL
+            __shareUrl: 'http://news.sina.cn/2017-08-15/detail-ifyixipt1832343.d.html?from=qudao',
+            __sportsShortURL: '',
+            __cmntId: 'gj:comos-fyixipt1832343:0',//评论ID
+            __cmntTotal: '0',//评论数
+            __isGetUserInfo: '1',//是否需要用户信息
+            __mainPic: '//n.sinaimg.cn/front/20170815/J6Ui-fyixias1014194.jpg',//图片地址
+            __cmntListUrl: 'http://cmnt.sina.cn/index?product=comos&index=fyixipt1832343&tj_ch=news', //为空时，页面不跳转
+            __gspsId: 'SINA_SPIDER:5958de58d551e5ca8ba41d3a5976bac5',//微博分享用ID		
+            __suda: 'article_new_cms',
+            __sudapageId: '2949',
+            __title: '法媒：巴基斯坦为来自中国的意外礼物而着迷_手机新浪网',
+            __content: '',
+            __tj_ch: 'news',//统计参数
+            __tj_sch: 'news',//统计参数
+            __webURL: 'http://news.sina.com.cn/o/2017-08-15/doc-ifyixipt1832343.shtml',
+            __ispraise: 0,//是否点赞点踩
+            __responeTime: '1502790171',
+            __cateid: 'sina_all',
+            __cre: 'newspagew',
+            __media: '',
+            __colleid: '1502790171',
+            __collekey: '9907f3af78a5b48c7afcb99254a12ef5',
+            __pkeys: '21940a7d61d6b80aee1e8794c5aa10e1',
+            __pValue: 'fyixipt1832343',
+            __api: '//sapi.sina.cn/article/getall?docID=fyixipt1832343&commentId=gj:comos-fyixipt1832343:0',
+            __hotapi: '//interface.sina.cn/wap_api/hotnews.d.html',
+            __hotNewsNo: 40,
+            __searchsteamcnf: {
+                //注释了的是可选参数，下面列出为默认值，可用“null”强制覆盖
+                force: null
+            },
+            __isClearAd: 0
+        };
+
+        var commentConfig = {
+            insertDom: '.j_cmt_wrap',
+            page: 'article',
+            getcomments: '//sapi.sina.cn/article/getall?docID=fyixipt1832343&commentId=gj:comos-fyixipt1832343:0',//评论接口
+            jsonp: 'jsoncallback',
+            jumpCmnt: true,
+            shareBtn: true,
+            showNewCmnt: false,
+            timeConvert: true,
+            multiple: false,
+            autoStart: true,
+            showCollBtn: true,
+            httpToHttps: true,
+            channel: 'gj',
+            newsid: 'comos-fyixipt1832343',
+            product: 'comos',
+            index: 'fyixipt1832343',
+        };
+
+        var globalConfig = {
+            startTime: new Date().getTime() //页面开始渲染时间,目前应用于：日志统计、性能统计。
+        }
+    </script>
+    <script type="text/javascript">
+            (window._ssp_global = window._ssp_global || {}).userConfig = {
+                domain: "whn2.star-media.cn"
+            }
+        var __pushConfig = {
+            __isBanner: false, //判断是否出现banner
+        }
+    </script>
+
+
+</head>
+
+<body class="article_body">
+    <main class="page_main fl_padding">
+
+        <!--header_s-->
+        <header class="hd_s1">
+            <a href="https://sina.cn?vt=4&amp;pos=11&amp;cid=56264" title="手机新浪网" class="hd_ic_lg icon_logo_m fl"></a>
+            <h2 class="hd_tit_l">
+                <a class="hd_tit_a" href="http://news.sina.cn/" title="新浪新闻">新浪新闻</a>
+            </h2>
+            <a href="http://news.sina.cn/guide.d.html" title="网站导航" class="hd_ic  icon_navigation fr"></a>
+            <a href="https://my.sina.cn/" title="" id="loginBox" class="hd_ic hd_ic_m icon_user fr">
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=" class="h_user_pic">
+	</a>
+        </header>
+        <!--header_e-->
+
+
+        <div sax-type="sax_5" class="qrs170815" data-id="PDPS000000056105"></div>
+
+
+        <section class="s_card">
+            <!--正文_s-->
+            <article class="art_box">
+
+                <!--标题_s-->
+                <h1 class="art_tit_h1">法媒：巴基斯坦为来自中国的意外礼物而着迷</h1>
+                <!--标题_e-->
+
+                <!--关注_s-->
+                <section>
+                    <figure class="weibo_info look_info" data-uid="2375086267" data-key="7b6abe2a47930e2a3162b00d479a7001" data-time="1502790171">
+                        <em class="weibo_img">
+					<img class="img_width" src="//tva3.sinaimg.cn/crop.0.0.1022.1022.50/8d90f0bbjw1ev7oijumy4j20sg0sg0v6.jpg" />
+					<span class="icon_page_v weibo_v weibo_v_b"></span></em>
+                        <figcaption class="weibo_detail">
+                            <h2 class="weibo_user">参考消息</h2>
+                            <time class="weibo_time">
+                                <span class="weibo_time_day">08月15日</span> 12:25 </time>
+                            <a class="look_sub j_article_wbreco" href="javascript:void(0)"><span class="icon_add look_sub_ic"></span>关注</a>
+                        </figcaption>
+                    </figure>
+                </section>
+                <!--背景浮层-->
+                <section class="fl_bg j_float_bg hide"></section>
+                <!--确认弹出框-->
+                <section class="fl_popup j_float_wbro hide">
+                    <h3 class="fl_popup_tit">确定不再关注此人吗</h3>
+                    <aside class="fl_popup_bottom"><a class="fl_popup_bottom_a" data-content="yes" href="javascript:void(0)">确定</a><a class="fl_popup_bottom_a"
+                            data-content="no" href="javascript:void(0)">取消</a></aside>
+                </section>
+                <!--关注_e-->
+
+
+                <img class="sharePic hide" src="//k.sinaimg.cn/n/translate/20170815/mpDm-fyixtym4752385.png/w700h350z1l10t1079e.jpg" />
+
+
+                <p class="art_p">原标题：观察 | 法报：巴基斯坦为来自中国的意外礼物而着迷</p>
+                <p class="art_p">法国《世界报》8月9日刊发题为《巴基斯坦为来自中国的意外礼物而着迷》的文章称，对伊斯兰堡来说，连接中国和瓜德尔港的中巴经济走廊计划是一个经济和外交机会。它将把巴基斯坦与中国这个大国捆绑在一起，从而使其摆脱复杂的邻居关系。巴基斯坦还希望从现在起到2020年全球贸易的4%将通过这条走廊。</p>
+                <a href="JavaScript:void(0)">
+                    <figure class="art_img_mini  j_p_gallery" data-type="simple">
+                        <img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/mpDm-fyixtym4752385.png" alt=" ▲相关报道截图" />
+                        <img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/mpDm-fyixtym4752385.png" alt=" ▲相关报道截图" disabeld-show="true"
+                            style="display:none">
+                        <h2 class="art_img_tit"> ▲相关报道截图</h2>
+                    </figure>
+                </a>
+                <p class="art_p">文章称，身着白色长袍的希纳·迪巴尔在调整呼吸。他独自站在卡拉奇大学一座礼堂的讲台上，手里拿着一张字迹潦草的纸片，上面的文字看起来歪歪扭扭的。他半闭着双眼且将手放在胸前，大声地用汉语朗诵一首诗。迪巴尔当天要和约20名巴基斯坦大学生一起，参加一场中国诗歌朗诵比赛。然而，促使他们参加竞赛的不只是对诗歌的热爱。迪巴尔说：“汉语眼下是最有利可图的语言。此外，中国也是秩序和纪律的体现。这都是巴基斯坦非常需要的。”</p>
+                <p class="art_p">如果迪巴尔能够在中国企业就职，可让自己的工资增加一倍。距离卡拉奇大学几百米远的一所宗教语言学校也受到了中国浪潮席卷。这所学校的校长贾瓦德·迈达尼说：“大家都只对汉语感兴趣。”于是，他的学校提供汉语授课，甚至为那些前往中国商务旅行的人提供速成班。</p>
+                <p class="art_p">文章称，巴基斯坦已投入到中国的怀抱。这一友谊有个名字叫中巴经济走廊，还许诺提供数十万就业机会的美好前景。该走廊打算建公路、铁路、油气管道、光缆以及经济特区。计划的总费用估计为610亿美元（约合4068亿人民币），将通过中国投资和贷款提供资金。这足以温暖巴基斯坦人的心。时任巴基斯坦总理纳瓦兹·谢里夫2015年4月说：“我们的友谊比山高、比海深、比蜜甜。”</p>
+                <a href="JavaScript:void(0)">
+                    <figure class="art_img_mini  j_p_gallery" data-type="simple">
+                        <img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/mm0J-fyixiay7694461.jpg" alt="▲在巴基斯坦瓜达尔港，一辆卡车正在进行作业。（法国《世界报》）"
+                        />
+                        <img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/mm0J-fyixiay7694461.jpg" alt="▲在巴基斯坦瓜达尔港，一辆卡车正在进行作业。（法国《世界报》）"
+                            disabeld-show="true" style="display:none">
+                        <h2 class="art_img_tit">▲在巴基斯坦瓜达尔港，一辆卡车正在进行作业。（法国《世界报》）</h2>
+                    </figure>
+                </a>
+                <p class="art_p">文章称，巴基斯坦向中国提供了更多的友谊。它的位置具有战略意义。经济走廊将使中国直接进入阿拉伯海和中东，无需经由马六甲海峡，而其80%的石油进口原本都要途经那里。它还让中国进一步深入南亚。</p>
+                <p class="art_p">这条走廊不仅有利于巴基斯坦经济，而且具有战略意义。它将把巴基斯坦与中国这个大国捆绑在一起，从而使其摆脱复杂的邻居关系。巴基斯坦北部是处于战争中的阿富汗。西部与什叶派伊朗接壤，两国关系时常吵吵闹闹。东部与印度为邻，它们自1947年以来不断发生冲突。</p>
+                <p class="art_p">中国依然是世界第二大经济体。巴基斯坦看得远，并且希望从现在起到2020年全球贸易的4%将通过这条走廊。</p>
+                <p class="art_p">文章称，2016年12月，谢里夫兴奋地表示，“一个新的巴基斯坦正在形成”。</p>
+                <a href="JavaScript:void(0)">
+                    <figure class="art_img_mini  j_p_gallery" data-type="simple">
+                        <img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/Wk8R-fyixiay7694468.jpg" alt="&nbsp;▲&nbsp;时任巴基斯坦总理纳瓦兹·谢里夫（《&nbsp;巴基斯坦日报》）"
+                        />
+                        <img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/Wk8R-fyixiay7694468.jpg" alt="&nbsp;▲&nbsp;时任巴基斯坦总理纳瓦兹·谢里夫（《&nbsp;巴基斯坦日报》）"
+                            disabeld-show="true" style="display:none">
+                        <h2 class="art_img_tit">&nbsp;▲&nbsp;时任巴基斯坦总理纳瓦兹·谢里夫（《&nbsp;巴基斯坦日报》）</h2>
+                    </figure>
+                </a>
+                <p class="art_p">事实上，经济走廊的计划发起后，人们如同在乐高游戏中将发电站和公路进行排列。中国驻巴基斯坦的一位外交官表示：“你们要知道，巴基斯坦的煤炭储量居世界第七，却没有建任何火电厂，而首都每天停电六个小时！”因此，依靠中国，巴基斯坦将兴建火电厂、太阳能和风能发电站。几条高速路已经开通或得以扩建。不久之后，中国与阿拉伯海的距离将只有数个小时。</p>
+                <p class="art_p">文章称，根据中国国家开发银行等机构起草并提交给巴基斯坦政府的中巴经济走廊规划文件，中国企业将在巴基斯坦经营农场，并投资农产食品加工业。关于工业发展，巴基斯坦将分为三个区域。在西部和西北部，将重点进行矿业开采。在中部，将发展水泥、纺织和设备工业。至于南部，规划文件则建议巴基斯坦在中国的支持下发展石油化工、钢铁和汽车工业。</p>
+                <a href="JavaScript:void(0)">
+                    <figure class="art_img_mini  j_p_gallery" data-type="simple">
+                        <img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/Qfz4-fyixias1014179.jpg" alt="▲&nbsp;中巴经济走廊的重大能源项目萨希瓦尔燃煤电站（新加坡《海峡时报》网站）"
+                        />
+                        <img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII="
+                            data-src="//n.sinaimg.cn/translate/20170815/Qfz4-fyixias1014179.jpg" alt="▲&nbsp;中巴经济走廊的重大能源项目萨希瓦尔燃煤电站（新加坡《海峡时报》网站）"
+                            disabeld-show="true" style="display:none">
+                        <h2 class="art_img_tit">▲&nbsp;中巴经济走廊的重大能源项目萨希瓦尔燃煤电站（新加坡《海峡时报》网站）</h2>
+                    </figure>
+                </a>
+                <p class="art_p">巴基斯坦《黎明报》记者胡拉姆·侯赛因指出，“像这样的对外国资金的开放，在巴基斯坦历史上是前所未有的”。</p>
+                <p class="art_p">中巴之间的经济接近已经开始了。上海电力股份有限公司出资约18亿美元购得巴基斯坦最大的能源企业之一卡拉奇电力公司。在一家中国财团购得卡拉奇证券交易所部分股权时，中国驻巴基斯坦外交官称赞了“两国间正在进行的金融一体化”。</p>
+                <div id='wx_pic' style='margin:0 auto;display:none;'>
+                    <img src='//n.sinaimg.cn/default/2fb77759/20151125/320X320.png' />
+                </div>
+                <script type="text/javascript">
+                    window.STO = window.STO || {}; window.STO.fw = new Date().getTime();
+                </script>
+
+
+                <!-- 分享模块_s -->
+                <section class="art_share">分享文章到:
+                    <a href="JavaScript:void(0)" title="分享到微博" class="art_share_weibo j_share_platform" data-platform="SinaWeibo">
+		<img class="img_width" src="https://mjs.sinaimg.cn/wap/online/cms/article/V4/images/share_weibo.png" />
+	</a>
+                </section>
+                <!-- 分享模块_e -->
+
+            </article>
+            <!--正文_e-->
+
+            <!-- 相关视频_s -->
+            <section class="s_card j_relevent_video hide"></section>
+            <!-- 相关视频_e -->
+
+            <div sax-type="sax_7" class="j_native_qrs170815 s_card_white s_card_white_m" data-id="PDPS000000057573"></div>
+        </section>
+
+
+
+        <!--相关新闻_s-->
+        <section class="s_card j_article_relevent_news">
+            <h2 class="card_tit">相关新闻</h2>
+            <aside class="feed_box j_relevent_box" id="j_relevent_news" data-sudaclick="recommend_news">
+
+            </aside>
+        </section>
+        <!--相关新闻_e-->
+
+        <!--评论_s-->
+        <section class="s_card j_cmt_wrap">
+        </section>
+        <!--评论_e-->
+        <!--广告_s-->
+        <section class="s_card">
+            <div class="tb_tl bottom_de"></div>
+            <section class="center_de">
+                <aside class="de_1x1">
+                    <div sax-type="sax_jdt" class="qrs170815  pic-wrap j_article_cutpic" data-spec="hot-pic-tb" data-id="PDPS000000059890"></div>
+                </aside>
+                <aside class="de_1x1">
+                    <div sax-type="sax_jdt" class="qrs170815 pic-wrap j_article_cutpic" data-spec="hot-pic-jd" data-id="PDPS000000060087"></div>
+                </aside>
+            </section>
+        </section>
+        <!--广告_e-->
+
+
+
+
+        <!--推荐阅读_s-->
+        <section class="s_card j_article_relevent">
+            <h2 class="card_tit">推荐阅读</h2>
+            <aside class="feed_box j_relevent_box" id="j_relevent_reading" data-sudaclick="recommend_news">
+
+            </aside>
+            <section class="loading j_load_bar">
+                <span class="loading_ic icon_s_refresh"></span><span class="loading_txt">加载中...</span>
+            </section>
+        </section>
+        <!--推荐阅读_e-->
+
+        <!--footer_s-->
+        <nav class="hd_nav  ft_nav">
+            <a class="hd_nav_a ft_nav_a" href="http://video.sina.cn/?vt=4" title="视频">视频</a>
+            <a class="hd_nav_a ft_nav_a" href="http://bn.sina.cn/?vt=4" title="直播">直播</a>
+            <a class="hd_nav_a ft_nav_a" href="http://photo.sina.cn/?vt=4" title="美图">美图</a>
+            <a class="hd_nav_a ft_nav_a" href="http://blog.sina.cn/?vt=4" title="博客">博客</a>
+            <a class="hd_nav_a ft_nav_a" href="http://k.sina.cn/?vt=4" title="看点">看点</a>
+            <a class="hd_nav_a ft_nav_a" href="http://gov.sina.cn/?vt=4" title="政务">政务</a>
+            <a class="hd_nav_a ft_nav_a" href="http://joke.sina.cn/?vt=4" title="搞笑">搞笑</a>
+            <a class="hd_nav_a ft_nav_a" href="http://ent.sina.cn/star/index.d.html?vt=4" title="八卦">八卦</a>
+            <a class="hd_nav_a ft_nav_a" href="http://eladies.sina.cn/feel?vt=4" title="情感">情感</a>
+            <a class="hd_nav_a ft_nav_a" href="http://travel.sina.cn/?vt=4" title="旅游">旅游</a>
+            <a class="hd_nav_a ft_nav_a" href="http://fo.sina.cn/?vt=4" title="佛学">佛学</a>
+            <a class="hd_nav_a ft_nav_a" href="http://zhongce.sina.com.cn/?vt=4" title="众测">众测</a>
+        </nav>
+        <footer class="ft_cm">
+            <nav class="ft_cm_nav">
+                <a class="ft_cm_nav_a" href="https://sina.cn">首页</a>
+                <a class="ft_cm_nav_a" href="http://news.sina.cn/guide.d.html?vt=4" title="导航">导航</a>
+                <a class="ft_cm_nav_a" href="http://lives.sina.cn/live/live?id=314&live_mg=sports&vt=4">反馈</a>
+                <a class="ft_cm_nav_a" id="footer_entry" href="http://my.sina.cn?vt=4">登录</a>
+            </nav>
+            <cite class="ft_cite">Sina.cn(京ICP0000007) &nbsp; 2017-08-15 17:42</cite>
+        </footer>
+        <!--footers_e-->
+
+    </main>
+    <section class="alert-module j_alert_box" style="display:none;"><i class="j_alert_text"></i></section>
+
+    <!--图片统计_s-->
+    <script type="text/javascript">
+                    var articleMaskLayer = {
+                        ch: 'news',
+                        isPV: true
+                    }
+    </script>
+    <!--图片统计_s-->
+
+
+    <div sax-type='lmt' class="qrs170815 j_lmt_w" data-id="8A622C4B3DD0"></div>
+    <script sax-type="lmt" type="text/html">
+        <div class="lmt_w">
+            <span class="lmt_c_w icon_com"></span>
+            <a href="<% content[0].link[0] %>">
+	            <img class="lmt_img" alt="<% content[0].src[1] %>" src="<% content[0].src[0] %>">
+	        </a>
+        </div>
+    </script>
+
+    <script sax-type="phtoto_proxy" type="text/html">
+        <a href="<% url %>" class="hd_sax">
+            <dl>
+                <dt><img src="<% img['u'] %>" alt=""></dt>
+                <dd>
+                    <h3>
+                        <% title %>
+                    </h3>
+                    <p>
+                        <% intro %>
+                    </p>
+                    <span>广告</span>
+                </dd>
+            </dl>
+        </a>
+    </script>
+
+    <script sax-type="sax_5" type="text/html">
+        <a href="<% content[0].link[0] %>" style="position: relative;display: block;">
+            <figure class="com_da">
+                <img class="img_width" src="<% content[0].src[0] %>" alt="<% content[0].src[1] %>">
+                <mark class="com_da_m">广告</mark>
+            </figure>
+        </a>
+    </script>
+
+    <script sax-type="sax_7" type="text/html">
+        <a class="m_f_a com_da" href="<% url %>">
+            <figure class="m_f_div">
+                <img class="img_width finpic" src="<% img['u'] %>">
+            </figure>
+            <aside class="m_f_con">
+                <h2 class="m_f_con_t cm_tit">
+                    <% title %>
+                </h2>
+                <h3 class="m_f_con_t cm_tit_solo m_f_con_t_s">
+                    <% intro %>
+                </h3>
+                <blockquote class="cm_f_ic">
+
+                    <mark class="cm_mark">广告</mark>
+                    <em class="m_f_con_n fr">1.6万<span class="m_f_con_ic icon_com"></span></em>
+                </blockquote>
+            </aside>
+        </a>
+    </script>
+
+    <script sax-type="sax_jdt" type="text/html">
+        <a href="<% content[0].link[0] %>" style="position: relative;display: block;height:3.02rem">
+			<img src="<% content[0].src[0] %>" alt="<% content[0].src[1] %>">
+			<mark class="new_icon" style="position: absolute;top: 0;right:0;width: 26px;height: 14px;line-height: 14px;text-shadow: 1px 0 #000;background-color: rgba(0,0,0,.18);color: #fff;font-size: 10px;-webkit-transform: scale(.6);transform: scale(.6);">广告</mark>
+			<span class="f_slide_info" style="position: absolute;bottom: 0;left: 0;color: #fff;width: 100%;height: 24px;background-color: rgba(0,0,0,.5);font-size: 10px;font-style: normal;line-height: 24px;-webkit-box-sizing: border-box;box-sizing: border-box;padding: 0 5px;">    
+				<i class="f_slide_t" style="display: block;width: 100%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;font-style: normal;"><% content[0].src[1] %></i>   
+			</span>
+		</a>
+    </script>
+
+    <script type="text/javascript">
+        var sudaMapConfig = {
+            uId: '',
+            pageId: '2949'
+        };
+        window.wap_class = "qrs170815";
+        window.native_class = "j_native_qrs170815";
+    </script>
+
+    <script>
+        storage.require({ url: '//mjs.sinaimg.cn/umd/base-tools-SUDA/0.0.19/index.all.min.js', key: 'SUDA', unique: '0.0.19' }, { url: '//mjs.sinaimg.cn/wap/module/login/201706071125/outlogin_layer_mobile.min.js', key: 'outlogin_layer_mobile.min.js', unique: '201706071125' }, { url: '//mjs.sinaimg.cn/wap/project/articlev4/0.10.18/index/index.min.js', key: 'index.min.js', unique: '0.10.18' }, { url: '//mjs.sinaimg.cn/wap/online/cms/article/V4/online/index.min.js', key: 'commont', unique: '7' }, { url: '//mjs.sinaimg.cn/wap/online/public/qusetMobile/201705221616/js/quset_mobile.min.js', key: 'quset_mobile.min.js', unique: '201705221616' });
+    </script>
+    <script type="text/javascript">
+        var simple = document.querySelector('[data-type=simple]');
+        if (simple) {
+            simple.classList && simple.classList.add('motu_cont');
+        }
+        //引用魔图主js
+        loadJs("https://images.pagechoice.net/data/motu_wap/motu_domain.js");
+        function loadJs(url) {
+            var head = document.getElementsByTagName("head")[0];
+            var script = document.createElement('script');
+            script.setAttribute('type', 'text/javascript');
+            script.setAttribute('charset', 'utf-8');
+            script.setAttribute('src', url);
+            head.appendChild(script);
+        }
+    </script>
+</body>
+
+</html>
