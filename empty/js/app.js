@@ -39,10 +39,10 @@
     window.addEventListener('beforeinstallprompt', function (e) {
         // 将事件返回存储起来
         deferredPrompt = e;
-
+        alert(deferredPrompt);
         // 取消默认事件
-        // e.preventDefault();
-        // return false;
+        e.preventDefault();
+        return false;
     });
 
     var button = document.querySelector('.j_show_prompt');
@@ -57,7 +57,7 @@
                 alert(choiceResult.outcome);
             });
     
-            deferredPrompt = null;
+            // deferredPrompt = null;
         }
     });
 
