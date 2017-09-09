@@ -48,31 +48,31 @@ self.addEventListener('activate', function (e) {
 
 self.addEventListener('fetch', function (e) {
   console.log('[Service Worker] Fetch', e.request.url);
-  // var fakeUrl = 'https://my_fake.api.com';
-  // if (e.request.url.indexOf(fakeUrl) > -1) {
-  //   console.log('fake url');
-  //   var nextPage = new Request('./nextPage/precache');
-  //   console.log(nextPage);
-  //   e.waitUntil(
-  //     fetch(nextPage).then(function (response) {
-  //       return caches.open(dataCacheName).then(function (cache) {
-  //         console.log('Cached next page ' + response.url);
-  //         return cache.put(nextPage, response).then(function () {
-  //           console.log('cache put success')
-  //           return new Response({url:'https://my_fake.api.com'});
-  //         })
-  //       });
-  //     }));
-  // } else {
-  //   /*
-  //    * The app is asking for app shell files.
-  //    * "Cache, falling back to the network" offline strategy:
-  //    * https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network
-  //    */
-  //   e.respondWith(
-  //     caches.match(e.request).then(function (response) {
-  //       return response || fetch(e.request);
-  //     })
-  //   );
-  // }
+  var fakeUrl = 'https://my_fake.api.com';
+  if (e.request.url.indexOf(fakeUrl) > -1) {
+    console.log('fake url');
+    var nextPage = new Request('./nextPage/precache');
+    console.log(nextPage);
+    e.waitUntil(
+      fetch(nextPage).then(function (response) {
+        return caches.open(dataCacheName).then(function (cache) {
+          console.log('Cached next page ' + response.url);
+          return cache.put(nextPage, response).then(function () {
+            console.log('cache put success')
+            return new Response({url:'https://my_fake.api.com'});
+          })
+        });
+      }));
+  } else {
+    /*
+     * The app is asking for app shell files.
+     * "Cache, falling back to the network" offline strategy:
+     * https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network
+     */
+    e.respondWith(
+      caches.match(e.request).then(function (response) {
+        return response || fetch(e.request);
+      })
+    );
+  }
 });
