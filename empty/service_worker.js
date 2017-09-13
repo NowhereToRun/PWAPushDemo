@@ -3,8 +3,8 @@ var cacheName = 'precache-static-v2';
 var filesToCache = [
   './',
   './index.html',
-  'https://mjs.sinaimg.cn/wap/project/homev8/8.1.5/homev8/homev8.min.css',
-  'https://mjs.sinaimg.cn/wap/project/homev8/8.1.5/homev8/img/bg.jpg'
+  'https://mjs.sinaimg.cn/wap/project/homev8/8.1.5/homev8/homev8.min.css'
+  // 'https://mjs.sinaimg.cn/wap/project/homev8/8.1.5/homev8/img/bg.jpg'    
 ];
 
 self.addEventListener('install', function (e) {
