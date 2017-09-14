@@ -3,8 +3,6 @@ var cacheName = 'precache-static-v2';
 var filesToCache = [
   './',
   './index.html',
-  // './css/inline.css',
-  // './js/app.js',
   'https://mjs.sinaimg.cn/wap/project/homev8/8.1.5/homev8/homev8.min.css',
   'https://mjs.sinaimg.cn/wap/online/others/pwa/manifestTest/manifest.json',
   'https://mjs.sinaimg.cn/wap/online/others/pwa/manifestTest/index.js'
