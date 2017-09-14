@@ -67,8 +67,7 @@
         </a>
       </section>
       <section class="s_card" id="j_card_intenews" data-sudaclick="ls_inte_news">
-        <a href="javascript:;"
-          class="hasfixnav" title="YOTA 3手机将9月19日发布 邀请函居然是一块水墨屏" data-info="a273467360a33a19b3100e04f97f7622|25|1|0|55|none|1505379457|0|25|0|0|29jv0|0|201"
+        <a href="javascript:;" class="hasfixnav" title="YOTA 3手机将9月19日发布 邀请函居然是一块水墨屏" data-info="a273467360a33a19b3100e04f97f7622|25|1|0|55|none|1505379457|0|25|0|0|29jv0|0|201"
           data-pclink="http://tech.sina.cn/mobile/xp/2017-09-14/detail-ifykusez0541516.d.html?cre=tianyi&amp;mod=whf&amp;loc=1&amp;r=25&amp;doct=0&amp;rfunc=55&amp;tj=none&amp;tr=25"
           data-label="" data-docid="fykusez0541516">
           <section class="m_f_a">
@@ -80,8 +79,7 @@
             </aside>
           </section>
         </a>
-        <a href="javascript:;"
-          class="hasfixnav" title="这4个信号暗示你的血脂已经很高了" data-info="297654b05be63ea2b9e57303c6b7b3eb|0|4|0|55|none|1505379457|0|12|0|0|27pZq|0|201"
+        <a href="javascript:;" class="hasfixnav" title="这4个信号暗示你的血脂已经很高了" data-info="297654b05be63ea2b9e57303c6b7b3eb|0|4|0|55|none|1505379457|0|12|0|0|27pZq|0|201"
           data-pclink="http://k.sina.cn/article_1833163491_6d43dae3001001l5o.html?cre=tianyi&amp;mod=whf&amp;loc=4&amp;r=0&amp;doct=0&amp;rfunc=55&amp;tj=none&amp;tr=12&amp;from=health"
           data-label="养生保健,脂肪肝" data-docid="fyktzin0064232">
           <section class="m_f_a">
@@ -105,6 +103,20 @@
   </main>
   <script src="https://mjs.sinaimg.cn/wap/module/base/js/zepto.min.js"></script>
   <script src="https://mjs.sinaimg.cn/wap/online/others/pwa/manifestTest/index.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('./service_worker.js')
+        .then(function () {
+          alert('Service Worker Registered');
+          console.log('Service Worker Registered');
+          showNotification();
+        })
+        .catch(function (err) {
+          alert('Service Worker Register Failed');
+        })
+    }
+  </script>
 </body>
 
 </html>
