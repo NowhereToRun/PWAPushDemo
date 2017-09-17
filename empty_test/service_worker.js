@@ -158,7 +158,7 @@ self.addEventListener('install', function (event) {
           Array.from(urlsToCacheKeys.values()).map(function (cacheKey) {
             // If we don't have a key matching url in the cache already, add it.
             if (!cachedUrls.has(cacheKey)) {
-              var request = new Request(cacheKey, { mode: 'no-cors', cache: 'no-cache', credentials: 'same-origin' });
+              var request = new Request(cacheKey, { mode: 'navigate', cache: 'no-cache', credentials: 'same-origin' });
               return fetch(request).then(function (response) {
                 // Bail out of installation unless we get back a 200 OK for
                 // every request.
