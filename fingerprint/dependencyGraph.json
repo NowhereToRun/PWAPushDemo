@@ -1,1 +1,0 @@
-[{"entry":"Test","dependency":[{"name":"@mfelibs/base-utils","type":"CMD","version":"1.5.2","dependency":[]},{"name":"@mfelibs/base-tools-fingerprint","type":"CMD","version":"0.0.4","dependency":[]},{"name":"../../js/libs/md5","type":"CMD","version":"0.0.1","dependency":[]}]}]
