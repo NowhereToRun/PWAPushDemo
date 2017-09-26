@@ -4,6 +4,8 @@ var precacheConfig = [
   ["https://mjs.sinaimg.cn/wap/project/lolita/0.0.2/index/index.min.css","faad0865eab96e1e0de73308083e23cb"],
   ["https://hilongjw.github.io/vue-recyclerview/static/js/stats.min.js","5fb2c1d75be27cd4ce8796c2f6fdc437"],
   ["https://mjs.sinaimg.cn/wap/project/lolita/0.0.2/index/index.min.js","5d1bebbbbe167f7f7899c58fce24b642"],
+  ["https://mjs.sinaimg.cn/wap/project/lolita/0.0.2/index/fonts/SinaHomeFont.3eeedcb.ttf","f1230865eab96e1e0de73308083e23cb"],
+  ["https://mjs.sinaimg.cn/wap/project/lolita/0.0.2/index/fonts/SinaHomeFont.a208558.woff","5456ebbbbe167f7f7899c58fce24b642"],
   ["./pwa.html","945d0f0b12db3f7e285b5cbfdd5c9742"]
 ];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
