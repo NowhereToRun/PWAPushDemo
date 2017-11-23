@@ -3,7 +3,7 @@
     let isSubscribed = false;
     let swRegistration = null;
 
-    const applicationServerPublicKey = 'BHiRLVcpaLuTljrvciLogGRUWULvwLRl41igibZRh8Pxq20cY_uDDcHHD2rOUnxlQkkpk_LivTnLxbxuBnBTkQQ';
+    const applicationServerPublicKey = 'BMXkvqsQKJ2Rr43QbChms_q13NA1RhrrJnMH_CT0a5xxE4Zz5khisWpEJl6jNYIrHG4Yw7rwWyji-yiMRrMB77I';
     const pushButton = document.querySelector('.j_push_btn');
 
     function showNotification() {
