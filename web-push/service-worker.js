@@ -106,9 +106,9 @@ self.addEventListener('push', function (event) {
 
     const title = 'Push Codelab';
     const options = {
-        body: 'Yay it works.',
-        icon: 'images/icon.png',
-        badge: 'images/badge.png'
+        body: `Push had this data: "${event.data.text()}"`,
+        icon: 'images/try_57x57_v1.png',
+        badge: 'images/try_57x57_v1.png'
     };
 
     const notificationPromise = self.registration.showNotification(title, options);
