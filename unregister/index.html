@@ -1,0 +1,129 @@
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sina News Lolita</title>
+
+  <link rel="manifest" href="https://mjs.sinaimg.cn/wap/online/others/pwa/manifestTest/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Websocket Push Test">
+  <link rel="apple-touch-icon" href="./images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="./images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+  <link rel="stylesheet" href="https://mjs.sinaimg.cn/wap/project/homev8/8.1.5/homev8/homev8.min.css">
+  <script type="text/javascript">
+    ; !function () { var t = 100, o = 750, e = document.documentElement.clientWidth || window.innerWidth, n = Math.max(Math.min(e, 480), 320), h = 50; 320 >= n && (h = Math.floor(n / o * t * .99)), n > 320 && 362 >= n && (h = Math.floor(n / o * t * 1)), n > 362 && 375 >= n && (h = Math.floor(n / o * t * 1)), n > 375 && (h = Math.floor(n / o * t * .97)), document.querySelector("html").style.fontSize = h + "px" }(); function rem() { var t = 100, o = 750, e = document.documentElement.clientWidth || window.innerWidth, n = Math.max(Math.min(e, 480), 320), h = 50; 320 >= n && (h = Math.floor(n / o * t * .99)), n > 320 && 362 >= n && (h = Math.floor(n / o * t * 1)), n > 362 && 375 >= n && (h = Math.floor(n / o * t * 1)), n > 375 && (h = Math.floor(n / o * t * .97)), document.querySelector("html").style.fontSize = h + "px" }; rem(); window.onresize = function () { rem(); };
+  </script>
+</head>
+
+<body>
+  <main class="page_main">
+    <header class="hd" style="z-index: 1;">
+      <a class="icon_lg" href="https://sina.cn/?vt=4&amp;pos=108&amp;his=0" title="新浪移动_手机新浪网">
+        <h1 class="hide"></h1>
+      </a>
+      <nav class="hd_cut" data-sudaclick="top_version"><a href="javascript:;" title="新浪网 手机新浪网 首页 智能推荐算法">标准版</a><a class="active" href="javascript:;" title="智能版">智能版</a></nav>
+      <nav class="hd_set"><a id="weather_icon" class="hd_s_w hide" href="http://weather1.sina.cn/?ttp=n13&amp;vt=4&amp;pos=108&amp;his=0" title="未来三天 天气趋势"></a>
+        <a id="loginBox" class="hd_s_user icon_user" href="http://my.sina.cn/?vt=4&amp;pos=108&amp;his=0" data-sudaclick="h_n_faceimg"></a>
+        <a class="hd_s_set icon_set" href="http://sina.cn/index/settings?vt=4&amp;pos=108&amp;his=0" title="设置">
+          <h2 class="hide">新浪移动_手机新浪网_用户设置</h2>
+        </a>
+      </nav>
+      <nav class="hd_nav" data-sudaclick="top_nav" id="j_top_nav"><a class="hd_nav_a" href="https://news.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="新闻">新闻</a><a class="hd_nav_a" href="http://finance.sina.cn/?vt=4&amp;pos=108&amp;his=0"
+          title="财经">财经</a><a class="hd_nav_a" href="https://sports.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="体育">体育</a>
+        <a class="hd_nav_a" href="https://ent.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="娱乐">娱乐</a>
+        <a class="hd_nav_a" href="https://mil.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="军事">军事</a>
+        <a class="hd_nav_a" href="http://auto.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="汽车">汽车</a><a class="hd_nav_a" href="https://tech.sina.cn/?vt=4&amp;pos=108&amp;his=0"
+          title="科技">科技</a><a class="hd_nav_a" href="http://video.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="视频">视频</a>
+        <a class="hd_nav_a" href="https://photo.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="美图">美图</a>
+        <a class="hd_nav_a" href="http://nba.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="NBA">NBA</a><a class="hd_nav_a"
+          href="http://blog.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="博客">博客</a>
+        <a class="hd_nav_a" href="http://m.leju.com/touch/index/?vt=4&amp;pos=108#source=m_sina_dbdh&amp;source_ext=sina&amp;his=0"
+          title="房产">房产</a><a class="hd_nav_a" href="http://finance.sina.cn/stock?vt=4&amp;pos=108&amp;his=0" title="股票">股票</a>
+        <a class="hd_nav_a" href="http://games.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="游戏">游戏</a>
+        <a class="hd_nav_a" href="http://book.sina.cn/?wm=book_wap_0043&amp;vt=4&amp;pos=108&amp;his=0" title="小说">小说</a>
+        <a class="hd_nav_a" href="http://ast.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="星座">星座</a>
+        <a class="hd_nav_a" href="https://edu.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="教育">教育</a>
+        <a class="hd_nav_a" href="http://eladies.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="女性">女性</a>
+        <a class="hd_nav_a" href="http://health.sina.cn/?vt=4&amp;pos=108&amp;his=0" title="健康">健康</a><a class="hd_nav_a"
+          href="http://weibo.cn/?vt=4&amp;pos=108&amp;his=0" title="微博">微博</a>
+        <a class="hd_nav_a" href="http://sina.cn/index/nav?vt=4&amp;pos=108&amp;his=0" title="更多">更多</a>
+      </nav>
+    </header>
+    <section class="s_card_item" id="j_card_tnews" mr-type="DrawRefresh" style="z-index: 0; transform: translate3d(0px, 0px, 0px); transition: none;">
+      <section class="s_card_t" style="background:#fff" id="j_card_yaowen">
+        <a href="javascript:;" title="习近平同普京向北理莫斯科大学开学典礼致贺辞" class="m_f_a cn">
+          <figure class="m_f_div"><img class="img_width finpic" src="https://k.sinaimg.cn/n/default/transform/20170913/nuVi-fykymwk2044180.jpg/w200h134l50t1fe7.jpg"
+              alt="习近平同普京向北理莫斯科大学开学典礼致贺辞"></figure>
+          <aside class="m_f_con">
+            <h2 class="m_f_con_t cm_tit">习近平同普京向北理莫斯科大学开学典礼致贺辞</h2>
+            <blockquote class="cm_f_ic"><em class="m_f_con_n fr"><span class="m_f_con_ic icon_com"></span></em></blockquote>
+          </aside>
+        </a>
+      </section>
+      <section class="s_card" id="j_card_intenews" data-sudaclick="ls_inte_news">
+        <a href="javascript:;"
+          class="hasfixnav" title="YOTA 3手机将9月19日发布 邀请函居然是一块水墨屏" data-info="a273467360a33a19b3100e04f97f7622|25|1|0|55|none|1505379457|0|25|0|0|29jv0|0|201"
+          data-pclink="http://tech.sina.cn/mobile/xp/2017-09-14/detail-ifykusez0541516.d.html?cre=tianyi&amp;mod=whf&amp;loc=1&amp;r=25&amp;doct=0&amp;rfunc=55&amp;tj=none&amp;tr=25"
+          data-label="" data-docid="fykusez0541516">
+          <section class="m_f_a">
+            <figure class="m_f_div"><img class="img_width finpic" src="https://k.sinaimg.cn/n/tech/crawl/20170914/cN9J-fykymwm8869538.jpg/w200h134f1t10l50q90c55.jpg"
+                alt="YOTA 3手机将9月19日发布 邀请函居然是一块水墨屏"></figure>
+            <aside class="m_f_con">
+              <h2 class="m_f_con_t  cm_tit">YOTA 3手机将9月19日发布 邀请函居然是一块水墨屏</h2>
+              <blockquote class="cm_f_ic"><em class="m_f_con_n m_f_con_n_r"><span class="m_f_con_ic_l m_f_con_ic icon_com"></span>10</em><cite class="m_iq_f_con_c">泡泡网</cite></blockquote>
+            </aside>
+          </section>
+        </a>
+        <a href="javascript:;"
+          class="hasfixnav" title="这4个信号暗示你的血脂已经很高了" data-info="297654b05be63ea2b9e57303c6b7b3eb|0|4|0|55|none|1505379457|0|12|0|0|27pZq|0|201"
+          data-pclink="http://k.sina.cn/article_1833163491_6d43dae3001001l5o.html?cre=tianyi&amp;mod=whf&amp;loc=4&amp;r=0&amp;doct=0&amp;rfunc=55&amp;tj=none&amp;tr=12&amp;from=health"
+          data-label="养生保健,脂肪肝" data-docid="fyktzin0064232">
+          <section class="m_f_a">
+            <figure class="m_f_div"><img class="img_width finpic" src="https://k.sinaimg.cn/n/sinacn/20170913/6260-fykusey9546372.jpg/w200h134f1t10l50q90c55.jpg"
+                alt="这4个信号暗示你的血脂已经很高了"></figure>
+            <aside class="m_f_con">
+              <h2 class="m_f_con_t  cm_tit">这4个信号暗示你的血脂已经很高了</h2>
+              <blockquote class="cm_f_ic"><em class="m_f_con_n m_f_con_n_r"><span class="m_f_con_ic_l m_f_con_ic icon_com"></span>5</em><cite class="m_iq_f_con_c">感悟中医之道</cite></blockquote>
+            </aside>
+          </section>
+        </a>
+
+      </section>
+    </section>
+    <!-- <a href="javascript:;" class="j_show_prompt">显示添加主屏？？</a> -->
+    <a href="javascript:;">
+      <section id="infoDom">
+
+      </section>
+    </a>
+  </main>
+
+
+  <script src="https://mjs.sinaimg.cn/wap/module/base/js/zepto.min.js"></script>
+  <!-- <script src="https://mjs.sinaimg.cn/wap/online/others/pwa/manifestTest/index.js"></script> -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
